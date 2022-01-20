@@ -17,16 +17,14 @@ type Episode = {
     title: string;
     thumbnail: string;
     duration: number;
-    durationAsString: number;
+    durationAsString: number; 
     members: string;
     publishedAt: string;
     url: string;
     description: string;
 };
 
-export default function Episode( {episode} ){ 
-    const router = useRouter()
-
+export default function Episode( {episode} ){
     return(
         <div className={styles.episode}>
             <div className={styles.thumbnailContainer}>
@@ -55,10 +53,29 @@ export default function Episode( {episode} ){
 }  
 
 export const getStaticPaths: GetStaticPaths = async () =>{
+    const { data } = await api.get("episodes", {
+        //buscar os mais acessados
+        params: {
+          _limit: 2,
+          _sort: 'published_at',
+          _order: 'desc' 
+        }
+      });
+
+    const paths = data.map(episode =>{
+        return {
+            params: {
+                slug: episode.id
+            }
+        }
+    })  
+   
     return {
-        paths: [],
+        paths,
         fallback: 'blocking'
     }
+
+    //incremental static regeneration
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {

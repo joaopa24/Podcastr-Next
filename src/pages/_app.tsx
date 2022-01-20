@@ -1,17 +1,21 @@
-import { Header } from '../components/Header'
+import styles from '../styles/app.module.scss'
 import '../styles/global.scss'
-import styles from  '../styles/app.module.scss'
+
+import { Header } from '../components/Header'
 import { Player } from '../components/Player'
+import { PlayerContext } from '../contexts/PlayerContext'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className={styles.wrapper}>
+    <PlayerContext.Provider value={'Joao'}>
+      <div className={styles.wrapper}>
       <main>
-       <Header/>
-       <Component {...pageProps} />
+          <Header />
+          <Component {...pageProps} />
       </main>
-      <Player/>
+      <Player />
     </div>
+    </PlayerContext.Provider>
   )
 }
 
