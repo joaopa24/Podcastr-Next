@@ -12,7 +12,7 @@
 
 [Podcastr](https://podcastr-nlw.vercel.app/) to bring you even closer to the best technology podcasts! 💜 
 
-This is a project developed during the **[Next Level Week](https://nextlevelweek.com/)**, presented by **[@Rocketseat](https://github.com/Rocketseat)** during April 19-25, 2021.
+This is a project developed during the **[Next Level Week](https://nextlevelweek.com/)**, presented by **[@Rocketseat](https://github.com/Rocketseat)**
 
 ## 🧪 Technologies
 
@@ -27,7 +27,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/guilhermecapitao/podcastr.git && cd podcastr
+$ git clone https://github.com/joaopa12/Podcastr-Next && cd podcastr
 ```
 
 Follow the steps below
@@ -39,6 +39,11 @@ $ yarn server
 # Start the project
 $ yarn dev
 ```
+
+## ℹ️ Results:
+
+ ![TeladeInicio](./public/tela1.PNG)
+ ![TeladeInicio2](./public/tela2.PNG)
 
 
 ## 📝 License
