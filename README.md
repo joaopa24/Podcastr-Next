@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img alt="Moveit" src="public/icon.svg" width="160px">
+  <img alt="Moveit" src="public/logo.svg" width="160px">
 </p>
 
 ## 💻 Project
