@@ -27,7 +27,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/joaopa12/Podcastr-Next && cd podcastr
+$ git clone https://github.com/joaopa24/Podcastr-Next && cd podcastr
 ```
 
 Follow the steps below
